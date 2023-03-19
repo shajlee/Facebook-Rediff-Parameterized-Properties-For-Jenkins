@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="Test">
+  <parameter name="url" value="https://facebook.com"/>
+  <parameter name="firstnameuser" value="Raven"/>
+  <parameter name="lastnameuser" value="Claw"/>
+  <parameter name="emailuser" value="chowdhurygs@rediffmail.com"/>
+  <parameter name="emailconfirmationuser" value="chowdhurygs@rediffmail.com"/>
+  <parameter name="passworduser" value="Kiyaan2014@"/>
+  <parameter name="birthmonth" value="Aug"/>
+  <parameter name="birthday" value="18"/>
+  <parameter name="birthyear" value="1990"/>
+  
+    <classes>
+      <class name="facebook.Facebook_Create_An_Account"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

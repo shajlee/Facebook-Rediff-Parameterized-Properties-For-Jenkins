@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="birthday" value="18"/>
+    <parameter name="lastnameuser" value="Claw"/>
+    <parameter name="birthmonth" value="Aug"/>
+    <parameter name="birthyear" value="1990"/>
+    <parameter name="emailuser" value="chowdhurygs@rediffmail.com"/>
+    <parameter name="emailconfirmationuser" value="chowdhurygs@rediffmail.com"/>
+    <parameter name="firstnameuser" value="Raven"/>
+    <parameter name="passworduser" value="Kiyaan2014@"/>
+    <parameter name="url" value="https://facebook.com"/>
+    <classes>
+      <class name="facebook.Facebook_Create_An_Account">
+        <methods>
+          <include name="birthDayCredentials"/>
+          <include name="launchUrl"/>
+          <include name="tearDown"/>
+          <include name="clickOnCreateANewAccountButton"/>
+          <include name="logInCredentials" invocation-numbers="0"/>
+          <include name="genderSelect"/>
+          <include name="signUpButton"/>
+        </methods>
+      </class> <!-- facebook.Facebook_Create_An_Account -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
